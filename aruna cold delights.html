@@ -1,0 +1,330 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cold Delights</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f9fa;
+}
+
+/* Navigation */
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#ffffff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+    z-index:1000;
+}
+
+.logo{
+    font-size:30px;
+    color:#ff4081;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ff4081;
+}
+
+/* Hero Section */
+
+.hero{
+    height:100vh;
+    background:url("10001.jpg");
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay{
+    background:rgba(0,0,0,.55);
+    padding:60px;
+    border-radius:20px;
+    text-align:center;
+    color:white;
+}
+
+.overlay h1{
+    font-size:65px;
+}
+
+.overlay p{
+    margin:20px 0;
+    font-size:22px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#ff4081;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-size:18px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#e91e63;
+}
+
+/* Sections */
+
+section{
+    padding:80px 8%;
+}
+
+.title{
+    text-align:center;
+    font-size:40px;
+    color:#ff4081;
+    margin-bottom:40px;
+}
+
+/* Cards */
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:280px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    text-align:center;
+    padding:15px;
+}
+
+.card p{
+    text-align:center;
+    padding:0 20px 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">🍦 Cold Delights</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#bestseller">Best Sellers</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero" id="home">
+
+<div class="overlay">
+
+<h1>Premium Ice Cream & Desserts</h1>
+
+<p>Fresh • Delicious • Homemade • Every Day</p>
+
+<a href="#menu" class="btn">Explore Menu</a>
+
+</div>
+
+</section>
+
+<section id="menu">
+
+<h2 class="title">Our Special Menu</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="10001.jpeg" alt="Ice Cream">
+<h3>Ice Cream</h3>
+<p>Vanilla, Chocolate, Strawberry & More</p>
+</div>
+
+<div class="card">
+<img src="10001 (1).jpeg" alt="Juice">
+<h3>Fresh Juices</h3>
+<p>Orange, Mango, Watermelon, Pineapple</p>
+</div>
+
+<div class="card">
+<img src="10001 (2).jpeg" alt="Milkshake">
+<h3>Milkshakes</h3>
+<p>Oreo, KitKat, Chocolate & Mango Shake</p>
+</div>
+
+<div class="card">
+<img src="10001 (3).jpeg" alt="Dessert">
+<h3>Desserts</h3>
+<p>Brownies, Cakes, Pastries & Sundaes</p>
+</div>
+
+</div>
+
+</section>
+<!-- BEST SELLERS -->
+
+<section id="bestseller">
+
+<h2 class="title">⭐ Best Sellers</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="10001 (4).jpeg" alt="">
+<h3>Chocolate Sundae</h3>
+<p>Rich chocolate ice cream with nuts & syrup.</p>
+</div>
+
+<div class="card">
+<img src="10001 (5).jpeg" alt="">
+<h3>Strawberry Shake</h3>
+<p>Fresh strawberries blended with creamy milk.</p>
+</div>
+
+<div class="card">
+<img src="10001 (7).jpeg" alt="">
+<h3>Fruit Delight</h3>
+<p>Mixed fruits served with premium vanilla ice cream.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section id="gallery">
+
+<h2 class="title">🖼️ Gallery</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="10001 (8).jpeg" alt="">
+</div>
+
+<div class="card">
+<img src="10002 (9).jpeg" alt="">
+</div>
+
+<div class="card">
+<img src="10003 (10).jpeg" alt="">
+</div>
+
+<div class="card">
+<img src="10004 (11).jpg"alt="">
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="title">📞 Contact Us</h2>
+
+<form style="max-width:700px;margin:auto;display:flex;flex-direction:column;gap:20px;">
+
+<input type="text" placeholder="Your Name"
+style="padding:15px;font-size:18px;border:1px solid #ccc;border-radius:8px;">
+
+<input type="email" placeholder="Your Email"
+style="padding:15px;font-size:18px;border:1px solid #ccc;border-radius:8px;">
+
+<textarea rows="6" placeholder="Your Message"
+style="padding:15px;font-size:18px;border:1px solid #ccc;border-radius:8px;"></textarea>
+
+<button class="btn">Send Message</button>
+
+</form>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer style="background:#222;color:white;text-align:center;padding:30px;margin-top:40px;">
+
+<h2>🍦 Cold Delights</h2>
+
+<p>Fresh Ice Cream | Juices | Milkshakes | Desserts</p>
+
+<br>
+
+<p>Email : info@colddelights.com</p>
+
+<p>Phone : +91 98765 43210</p>
+
+<p>Address : Chennai, Tamil Nadu</p>
+
+<br>
+
+<p>© 2026 Cold Delights. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
